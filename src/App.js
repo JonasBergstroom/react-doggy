@@ -7,15 +7,13 @@ class App extends Component {
     super(props)
     this.state = {
       names: [],
+      pageNum: 1,
       
-    
-
-
     }
 
   }
   componentDidMount() {
-    const url = "https://api.jsonbin.io/b/5f4d604b514ec5112d136cd6";
+    const url = "https://api.jsonbin.io/b/607eb43024143e5df089b745";
    
 
     
@@ -31,13 +29,31 @@ class App extends Component {
     const { names } = this.state;
 
     return(
-      <div>
+      <div className="container">
+        <div className="jumbotron">
+        <h1 className="display-1">Doggy daycare: </h1>
+        </div>
+        <div className="users">
           {names.map((user) => (
-          <p key={user.chipNumber}>{user.owner.name} {user.owner.lastName}</p>
+            <div className="card" key={user.chipNumber}>
+            <img src={user.img} class="card-img-top" alt={`${user.name} img`} />
+            <div className="card-body">
+              <h5 className="card-title">{user.name} {user.sex}</h5>
+              <p className="card-text">Owners name is:{user.owner.name}</p>
+              <a href="#" class="btn btn-primary">More about this friend</a>
+            </div>
+            </div>
 
           ))}
+          </div>
 
-      </div>
+          <div className="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary">Prev</button>
+          <button type="button" class="btn btn-primary">{this.state.pageNum}</button>
+          <button type="button" class="btn btn-primary">Next</button>
+            </div>   
+          </div>
+
     
     )
   }
