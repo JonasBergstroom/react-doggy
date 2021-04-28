@@ -5,14 +5,20 @@ body{
 }
 
 .card {
+
   width: 18em;
+
   margin: 10px;
+
 }
 
 .users{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-direction: column wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
 }
 
 
@@ -22,9 +28,17 @@ body{
 
 }
 
-.btn-group {
+.card-body{
+  background: linear-gradient(to right, #2799b0,#7a2c92);
+ 
 
-  margin-top: 5%;
-  margin-bottom: 5%;
+}
+
+.card-img-top{
+  background: transparent;
+
+  width: 100%;
+  height: 40vmin;
+  object-fit: cover;
 
 }
