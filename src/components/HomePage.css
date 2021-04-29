@@ -1,0 +1,78 @@
+.Home {
+
+    display: flex;
+    flex-direction: column;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  
+    height: calc(100vh - 7.5vh);
+  
+  }
+  
+  .Home main {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    height: 100%;
+  
+  }
+  
+  .Home .Title {
+  
+    margin: 0;
+  
+    color: rebeccapurple;
+    font-size: calc(70px + 2vmin);
+    font-weight: bold;
+  
+  }
+  
+  .Home .Text {
+  
+    margin: 0;
+    margin-bottom: 10vmin;
+    color: linear-gradient(to right, #9c27b0,#8ecdff);
+    font-size: calc(px + 1.75vmin);
+  
+  }
+  
+  .Home .Button {
+  
+    margin: 2vmin;
+    padding: 1vmin 2vmin;
+  
+    background: linear-gradient(to right, #9c27b0,#8ecdff);
+    color: #ffffff;
+    border-radius: 0.5vmin;
+    font-size: calc(10px + 1.25vmin);
+    text-decoration: none;
+    cursor: pointer;
+  
+  }
+  
+
+
+  .App footer {
+  
+    margin-bottom: 0.5vmin;
+    margin-left: 0.5vmin;
+  
+    color: #ffffff;
+    font-size: calc(10px + 0.75vmin);
+    text-align: left;
+  
+  }
+  
+  .App footer a {
+  
+    color: var(--accent-color);
+    text-decoration: none;
+  
+  }
+  

@@ -1,50 +1,27 @@
-import React, { Component } from 'react';
-import './App.css';
+import "./App.css";
+import Home from "./components/HomePage";
+import ListofDogs from "./components/ListofDogs";
+import { Route, BrowserRouter as Router, Link, Switch } from "react-router-dom"
 
-class App extends Component {
-  
-  constructor(props) {
-    super(props)
-    this.state = {
-      names: []
-    
-      
-    }
+function App() {
+  return (
+  <Router basename={process.env.PUBLIC_URL}>
+      <div className="App">
+        <header>
+          <Link className="Logo" to="/Home">
+            <h2>Home</h2>
+          </Link>
+        </header>
 
-  }
-  componentDidMount() {
-    const url = "https://api.jsonbin.io/b/60882ce55210f622be3b4768";
-   
-    fetch(url) 
-      .then(data => data.json())
-      .then(data => this.setState({ names: data.dogs}))
-    }
-  
-  render() {
-    const { names } = this.state;
-
-    return(
-      <div className="container">
-        <div className="jumbotron">
-        <h1 className="display-1">Doggy daycare: </h1>
-        </div>
-        <div className="users">
-          {names.map((user) => (
-            <div className="card" key={user.chipNumber}>
-            <img src={user.img} className="card-img-top" alt={`${user.name} img`} />
-            <div className="card-body">
-              <h5 className="card-title">{user.name} {user.sex}</h5>
-              <p className="card-text">Owners name is:{user.owner.name}</p>
-              <a href="#" class="btn btn-primary">More about this friend</a>
-            </div>
-            </div>
-
-          ))}
-              </div>
-          </div>
-    )
-  }
- 
+        <main>
+        <Switch>
+          <Route exact path="/Home"> <Home /> </Route>
+          <Route exact path="/Dogs"> <ListofDogs /> </Route>
+        </Switch>
+        </main>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
