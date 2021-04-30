@@ -10,7 +10,7 @@ function App() {
       <div className="App">
         <header>
           <Link className="Logo" to="/">
-            <h2>Home</h2>
+            <h2 className="HomeBtn">Home</h2>
           </Link>
         </header>
         <main>

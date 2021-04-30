@@ -35,7 +35,7 @@ class App extends Component {
             <Link className="card" key={user.chipNumber}>
             <img src={user.img} className="card-img-top" alt={`${user.name} img`} />
             <div className="card-body">
-              <h5 className="card-DogName">{user.name} </h5>
+              <h5 className="card-Dog">{user.name} </h5>
              <Link href="#" className="btn btn-primary" to={"/Dogs/"+user.chipNumber}>More about this friend</Link> 
             </div>
             </Link>

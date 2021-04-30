@@ -33,10 +33,8 @@
     position: relative;
     bottom: 280px;
     font-family: "Lucida Console", "Copperplate", monospace;
+    font-size: calc(70px + 1.10vmin);
 
- 
- 
-  
   }
   
   .Home .Text {
