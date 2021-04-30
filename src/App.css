@@ -3,6 +3,9 @@ body{
   background: linear-gradient(to right, #9c27b0,#8ecdff);
   
 }
+.Logo{
+  color: #8ecdff;
+}
 
 .card {
 
@@ -41,4 +44,18 @@ body{
   height: 40vmin;
   object-fit: cover;
 
+}
+
+.card-title {
+  color: lightblue;
+}
+
+.display-1 {
+  color: #9c27b0;
+  color: white;
+  font-size: 102px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 4px 10px rgba(0, 0, 0, 0.6);
+  
 }
