@@ -51,8 +51,9 @@ class Appp extends Component {
                 <h5 className="card-DogsAge">{user.age} Year</h5>
                 <h5 className="card-Sex">{user.sex}</h5>
                 <h5 className="card-Breed">{user.breed} </h5>
-                <p className="card-OwnersName">Owners name is:{user.owner.name} {user.owner.lastName}</p>
-                <p className="card-OwnersPhones">{user.owner.name}s Number: {user.owner.phoneNumber}</p>
+                <h5 className="card-Present">Present: {user.present === true ? "Yes" : "No"} </h5>                   
+                <p className="card-OwnersName">Owners name: {user.owner.name} {user.owner.lastName}</p>
+                <p className="card-OwnersPhones">{user.owner.name}s number: {user.owner.phoneNumber}</p>
 
               </div>
               </div>
