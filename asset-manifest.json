@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-doggy/static/css/main.1786e44a.chunk.css",
-    "main.js": "/react-doggy/static/js/main.ec510418.chunk.js",
-    "main.js.map": "/react-doggy/static/js/main.ec510418.chunk.js.map",
+    "main.js": "/react-doggy/static/js/main.6ae6f170.chunk.js",
+    "main.js.map": "/react-doggy/static/js/main.6ae6f170.chunk.js.map",
     "runtime-main.js": "/react-doggy/static/js/runtime-main.24cf3304.js",
     "runtime-main.js.map": "/react-doggy/static/js/runtime-main.24cf3304.js.map",
     "static/js/2.857d5129.chunk.js": "/react-doggy/static/js/2.857d5129.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.24cf3304.js",
     "static/js/2.857d5129.chunk.js",
     "static/css/main.1786e44a.chunk.css",
-    "static/js/main.ec510418.chunk.js"
+    "static/js/main.6ae6f170.chunk.js"
   ]
 }
