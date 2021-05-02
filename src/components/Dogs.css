@@ -10,6 +10,9 @@
 .card-Name{
 
     font-family: "Lucida Console", "Copperplate", monospace;
+    font-size: 35px;
+
+
 }  
 
 .card-DogsAge{
@@ -25,11 +28,20 @@
 
 .card-Breed{
 
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Lucida Console", "Copperplate", monospace;
 
 
 
+}
 
+.card-OwnersPhones{
+
+    color: lightblue;
+}
+
+.card-OwnersName{
+
+    color: lightblue;
 }
   
   

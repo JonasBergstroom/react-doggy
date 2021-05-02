@@ -17,8 +17,8 @@ body{
 .card {
 
   width: 18em;
-
   margin: 10px;
+  
 
 }
 
@@ -47,8 +47,8 @@ body{
 
 }
 
-.card-title {
-  color: lightblue;
+.card-Dog{
+  color: white;
 }
 
 .display-1 {

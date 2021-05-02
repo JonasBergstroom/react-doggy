@@ -28,7 +28,7 @@ class App extends Component {
     return(
       <div className="container">
         <div className="jumbotron">
-        <h1 className="display-1">Doggy daycare: </h1>
+        <h1 className="display-1">Doggy Daycare </h1>
         </div>
         <div className="users">
           {names.map((user) => (
@@ -36,7 +36,7 @@ class App extends Component {
             <img src={user.img} className="card-img-top" alt={`${user.name} img`} />
             <div className="card-body">
               <h5 className="card-Dog">{user.name} </h5>
-             <Link href="#" className="btn btn-primary" to={"/Dogs/"+user.chipNumber}>More about this friend</Link> 
+             <Link className="btn btn-primary" to={"/Dogs/"+user.chipNumber}>More about this friend</Link> 
             </div>
             </Link>
 

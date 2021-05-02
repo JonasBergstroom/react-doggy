@@ -31,7 +31,7 @@ class Appp extends Component {
       return(
         <div className="container">
           <div className="jumbotron">
-          <h1 className="display-1">Doggy daycare: </h1>
+          <h1 className="display-1">Doggy Daycare </h1>
           </div>
           <div className="users">
 
